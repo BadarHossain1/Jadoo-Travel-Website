@@ -1,0 +1,478 @@
+body {
+    overflow-x: hidden;
+}
+
+.jadoo-txt {
+    font-family: 'Volkhov', serif;
+
+    color: #181E4B;
+    width: 114px;
+    height: 33px;
+
+}
+
+.hero-section {
+
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #212832;
+    margin-right: 3rem;
+}
+
+.sign-up-btn {
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 0.375rem 1.5rem;
+}
+
+.hero-tagline {
+    color: #DF6951;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.1;
+    color: #181E4B;
+    position: relative;
+}
+
+.hero-underline {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 0;
+    height: 15px;
+    width: 480px;
+    background-color: #DF6951;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.hero-text {
+    color: #5E6282;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.btn-find-more {
+    background-color: #F1A501;
+    border: none;
+    padding: 1rem 1.75rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(241, 165, 1, 0.3);
+}
+
+.play-demo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.play-btn {
+    background-color: #DF6951;
+    color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    box-shadow: 0 10px 30px rgba(223, 105, 81, 0.3);
+}
+
+.play-text {
+    color: #686D77;
+    font-weight: 500;
+}
+
+.decoration-image {
+
+    position: absolute;
+
+    left: 636px;
+    top: -149px;
+
+}
+
+.traveller-img-container {
+    position: absolute;
+    width: 765px;
+    height: 764px;
+    left: -150px;
+    top: -410px;
+    z-index: 2;
+}
+
+
+
+/* Services Section Styles */
+.services-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #14183E;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 36px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
+}
+
+.service-icon-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.service-card-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1E1D4C;
+}
+
+.service-card-text {
+    color: #5E6282;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Add a subtle decorative element to the services section */
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: url('images/Decore-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Top Destinations Section Styles */
+.destinations-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.destinations-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #14183E;
+    margin-bottom: 3rem;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.destination-image-container {
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-image {
+    transform: scale(1.05);
+}
+
+.destination-details {
+    background-color: white;
+}
+
+.destination-name {
+    font-family: 'Volkhov', serif;
+    font-weight: 600;
+    color: #1E1D4C;
+    font-size: 1.25rem;
+}
+
+.destination-price {
+    font-weight: 700;
+    color: #1E1D4C;
+}
+
+.trip-duration {
+    color: #5E6282;
+    font-size: 0.95rem;
+}
+
+.destination-icon {
+    color: #5E6282;
+    transform: rotate(45deg);
+}
+
+/* Add decorative element to destinations section */
+.destinations-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('images/Decore-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Book Trip Section Styles */
+.book-trip-section {
+    padding: 7rem 0;
+    position: relative;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.book-trip-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#EAF0F4 8%, transparent 8%);
+    background-position: 0 0;
+    background-size: 30px 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.book-trip-title {
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #14183E;
+    margin-bottom: 3rem;
+}
+
+/* Booking Steps Styles */
+.booking-step-icon-container {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.step-1 {
+    background-color: #F0BB1F;
+}
+
+.step-2 {
+    background-color: #F15A2B;
+}
+
+.step-3 {
+    background-color: #006380;
+}
+
+.booking-step-title {
+    font-weight: 700;
+    color: #1E1D4C;
+    font-size: 1.1rem;
+}
+
+.booking-step-text {
+    color: #5E6282;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Trip Card Styles */
+.trip-card-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.trip-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+}
+
+.main-trip-card {
+    width: 370px;
+}
+
+.trip-card-title {
+    font-weight: 700;
+    color: #1E1D4C;
+}
+
+.trip-card-date {
+    color: #5E6282;
+    font-size: 0.9rem;
+}
+
+.trip-icon-container {
+    width: 36px;
+    height: 36px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A79DF;
+}
+
+.trip-card-footer {
+    color: #5E6282;
+    font-size: 0.95rem;
+}
+
+/* Small Trip Card Styles */
+.small-trip-card {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 18px;
+    z-index: 3;
+}
+
+.small-trip-image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.small-card-label {
+    color: #8A79DF;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.small-card-title {
+    color: #1E1D4C;
+    font-weight: 600;
+}
+
+.completion-text {
+    font-size: 0.8rem;
+    color: #5E6282;
+    text-align: right;
+}
+
+.progress-bar {
+    background-color: #8A79DF !important;
+}
+
+@media (max-width: 992px) {
+    .book-trip-title {
+        font-size: 2.5rem;
+    }
+
+    .small-trip-card {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* @media (max-width: 992px) {
+     .hero-title {
+         font-size: 3.5rem;
+     }
+
+     .hero-underline {
+         width: 330px;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .hero-title {
+         font-size: 2.75rem;
+     }
+
+     .hero-underline {
+         width: 260px;
+         bottom: 0.8rem;
+     }
+
+     .nav-link {
+         margin-right: 1rem;
+     }
+ } */
