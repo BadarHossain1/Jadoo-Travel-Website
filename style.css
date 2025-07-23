@@ -407,7 +407,7 @@ body {
 
 
 
-/* Testimonials Section Styles */
+
 .testimonials-section {
     padding: 112px 0;
     position: relative;
@@ -422,7 +422,7 @@ body {
 }
 
 .testimonial-indicators {
-    margin-top: 64px;
+    margin-top: 60px;
 }
 
 .testimonial-indicator {
@@ -430,14 +430,15 @@ body {
     height: 12px;
     border-radius: 50%;
     background-color: #E5E5E5;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+
 }
 
-.testimonial-indicator.active {
-    width: 15px;
-    height: 15px;
+.testimonial-indicator-active {
+    width: 12px;
+    height: 12px;
     background-color: #3E2E4D;
+    border-radius: 50%;
 }
 
 .testimonials-container {
@@ -452,25 +453,36 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     position: relative;
     transition: all 0.4s ease;
+
+
+
+
 }
 
 .active-testimonial {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+
     z-index: 3;
+    width: 504px;
+    height: 245px;
 }
 
 .inactive-testimonial {
     position: absolute;
-    top: 60%;
-    right: 10%;
-    width: 80%;
+    width: 504px;
+    top: 240px;
+    right: 0px;
+
+
     padding: 20px;
     z-index: 2;
-    opacity: 0.7;
+    opacity: 0.6;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+
+
 }
 
 .testimonial-image-container {
@@ -478,7 +490,7 @@ body {
     height: 70px;
     position: absolute;
     top: -35px;
-    left: 30px;
+    left: -30px;
 }
 
 .testimonial-image {
@@ -514,8 +526,8 @@ body {
 .testimonial-navigation {
     position: absolute;
     top: 50%;
-    right: -70px;
-    transform: translateY(-50%);
+    right: -60px;
+    bottom: 100px;
     z-index: 4;
 }
 
@@ -540,7 +552,6 @@ body {
     color: white;
 }
 
-/* Partners Section Styles */
 .partners-section {
     padding: 48px 0 80px;
     background-color: white;
@@ -561,14 +572,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.partner-logo:hover {
-    opacity: 1;
-}
 
 .placeholder-logo {
     width: 100%;
     height: 100%;
-    background-color: #f8f8f8;
+
     border-radius: 8px;
 }
 
@@ -585,19 +593,23 @@ body {
 }
 
 .newsletter-container {
-    background-color: #F5F7FA;
-    border-radius: 20px;
+
+    border-radius: 20px 129px 20px 20px;
+    background: rgb(223, 215, 249, 0.4);
+
+
     padding: 64px 32px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+    border-radius: 129px 20px 20px 20px;
 }
 
 .newsletter-title {
     font-family: 'Volkhov', serif;
     font-weight: 600;
     font-size: 35px;
-    color: #14183E;
+    color: #5E6282;
     line-height: 1.4;
 }
 
@@ -652,18 +664,20 @@ body {
 
 .send-icon-container {
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: -15px;
+    right: -10px;
     width: 70px;
     height: 70px;
-    background-color: rgba(255, 125, 104, 0.2);
+
+    background: linear-gradient(216.20deg, rgb(116, 125, 239) 13.888%, rgb(94, 59, 225) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FF7D68;
+    color: white;
     font-size: 24px;
     z-index: 1;
+
 }
 
 /* Decorative elements */
@@ -800,13 +814,54 @@ body {
 }
 
 .app-badge {
-    height: 40px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
     border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 40px;
     transition: transform 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .app-badge:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}
+
+.app-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.app-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.app-get {
+    font-size: 8px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.app-store {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -1px;
+}
+
+.google-play .app-icon {
+    color: #34A853;
+}
+
+.apple-store .app-icon {
+    color: white;
 }
 
 .copyright-text {
