@@ -146,6 +146,8 @@ body {
 
 
 
+
+
 .service-icon-container {
     width: 100px;
     height: 100px;
@@ -180,6 +182,8 @@ body {
 }
 
 
+
+
 .red-box {
     position: relative;
     width: 100px;
@@ -194,7 +198,13 @@ body {
 }
 
 
+.top-destination-decore {
 
+    top: 200px;
+    right: 10px;
+    z-index: -1;
+
+}
 
 
 .destinations-title {
@@ -216,6 +226,8 @@ body {
 
     box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 
+    z-index: 5;
+
 
 }
 
@@ -223,7 +235,32 @@ body {
     width: 100%;
     height: 200px;
     overflow: hidden;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+}
 
+.destination-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #FF5B5B;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 
@@ -319,6 +356,9 @@ body {
     line-height: 1.6;
 }
 
+
+
+
 /* Trip Card Styles */
 .trip-card-container {
     display: flex;
@@ -326,16 +366,21 @@ body {
     padding-top: 30px;
 }
 
+
+
+
 .trip-card {
     border-radius: 26px;
 
     box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
-    /* white */
+
     background: rgb(255, 255, 255);
 
     padding: 24px;
 
     color: #84829A;
+
+    z-index: 2;
 }
 
 .main-trip-card {
@@ -368,6 +413,19 @@ body {
     font-size: 15px;
 }
 
+.ellipse-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 0px;
+    top: 20px;
+    filter: blur(100px);
+    background: rgb(89, 177, 230);
+    opacity: 0.9;
+    border-radius: 50%;
+    
+}
+
 
 .small-trip-card {
     font-family: Poppins;
@@ -377,7 +435,7 @@ body {
     width: 260px;
     padding: 15px;
     border-radius: 18px;
-    z-index: 1;
+    z-index: 4;
 }
 
 .small-trip-image {
@@ -531,25 +589,13 @@ body {
     z-index: 4;
 }
 
-.testimonial-nav-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
+.nav-btn {
+    background-color: transparent;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    color: #3E2E4D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
+    color: black;
 
-.testimonial-nav-btn:hover {
-    background-color: #3E2E4D;
-    color: white;
+
 }
 
 .partners-section {
@@ -569,7 +615,18 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0.8;
-    transition: all 0.3s ease;
+
+}
+
+.expedia-logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    background: rgb(255, 255, 255);
 }
 
 
@@ -654,12 +711,12 @@ body {
     border-radius: 10px;
     font-weight: 500;
     box-shadow: 0 10px 20px rgba(255, 125, 104, 0.3);
-    transition: all 0.3s ease;
+
 }
 
 .newsletter-btn:hover {
     background-color: #ff6a53;
-    transform: translateY(-2px);
+
 }
 
 .send-icon-container {
@@ -717,24 +774,6 @@ body {
     z-index: 0;
 }
 
-@media (max-width: 768px) {
-    .partners-container {
-        justify-content: center;
-    }
-
-    .newsletter-title {
-        font-size: 29px;
-    }
-
-    .newsletter-form-container {
-        flex-direction: column;
-    }
-
-    .input-container {
-        margin-bottom: 16px;
-        margin-right: 0;
-    }
-}
 
 /* Footer Section Styles */
 .footer-section {
@@ -795,22 +834,24 @@ body {
     transition: all 0.3s ease;
 }
 
-.social-icon.facebook {
-    background-color: #3B5998;
-}
 
-.social-icon.instagram {
-    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
-}
 
-.social-icon.twitter {
-    background-color: #1DA1F2;
-}
+.instagram {
+    background: url('/images/Background.png');
+    background-position: center;
+    background-repeat: none;
 
-.social-icon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     color: white;
+}
+
+.facebook {
+    background-color: white;
+    color: black;
+}
+
+.twitter {
+    background-color: white;
+    color: black;
 }
 
 .app-badge {
@@ -823,15 +864,10 @@ body {
     align-items: center;
     width: 130px;
     height: 40px;
-    transition: transform 0.3s ease;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.app-badge:hover {
-    transform: translateY(-2px);
-    color: white;
-    text-decoration: none;
-}
+
 
 .app-icon {
     margin-right: 8px;
@@ -842,6 +878,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    color: white;
 }
 
 .app-get {
@@ -856,11 +893,11 @@ body {
     margin-top: -1px;
 }
 
-.google-play .app-icon {
+.google-play {
     color: #34A853;
 }
 
-.apple-store .app-icon {
+.apple-store {
     color: white;
 }
 
@@ -868,34 +905,3 @@ body {
     color: #5E6282;
     font-size: 14px;
 }
-
-@media (max-width: 992px) {
-    .footer-tagline {
-        max-width: 100%;
-    }
-}
-
-/* @media (max-width: 992px) {
-     .hero-title {
-         font-size: 56px;
-     }
-
-     .hero-underline {
-         width: 330px;
-     }
- }
-
- @media (max-width: 768px) {
-     .hero-title {
-         font-size: 44px;
-     }
-
-     .hero-underline {
-         width: 260px;
-         bottom: 13px;
-     }
-
-     .nav-link {
-         margin-right: 16px;
-     }
- } */
